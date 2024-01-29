@@ -6,8 +6,8 @@ const Signin = () => {
   const navigate = useNavigate();
 
   const signInWithGoogle = async () => {
-    const result = await signInWithPopup(auth, provider);
-
+    // const result = await signInWithPopup(auth, provider);
+    await signInWithPopup(auth, provider);
     // After sign in navigate() redirects to home page
     navigate("/");
   };

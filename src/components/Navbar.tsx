@@ -16,7 +16,11 @@ const Navbar = () => {
     <div className="navbar">
       <div className="links">
         <Link to="/">Home</Link>
-        <Link to="/signin">Sign In</Link>
+        {!userData ? (
+          <Link to="/signin">Sign In</Link>
+        ) : (
+          <Link to="/createpost">Create Post</Link>
+        )}
       </div>
 
       {/* Display user details logic */}
