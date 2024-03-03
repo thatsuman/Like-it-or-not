@@ -45,9 +45,12 @@ export const CreateForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onCreatePost)}>
-      <input placeholder="Title.." {...register("title")} />
+      <input placeholder="Post Title.." {...register("title")} />
       <p style={{ color: "red" }}>{errors.title?.message}</p>
-      <textarea placeholder="Description.." {...register("description")} />
+      <textarea
+        placeholder="Let your thoughts out.."
+        {...register("description")}
+      />
       <p style={{ color: "red" }}>{errors.description?.message}</p>
       <input type="Submit" className="submitForm" />
     </form>
