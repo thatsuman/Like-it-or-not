@@ -18,6 +18,12 @@ body {
   justify-content: flex-end;
 }
 
+.navbar .title {
+  text-align: center;
+  margin-right: 50px;
+  color: white;
+}
+
 .navbar .links {
   text-align: center;
   margin-right: 50px;

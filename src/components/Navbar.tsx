@@ -14,6 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      <p className="title">Like It or Not</p>
       <div className="links">
         <Link to="/">Home</Link>
         {!userData ? (
